@@ -1,20 +1,20 @@
 # Business Objective/Problem
 
-● Foody.vn là một kênh phối hợp với các nhà hàng/quán ăn bán thực phẩm online.
-● Chúng ta có thể lên đây để xem các đánh giá, nhận xét cũng như đặt mua thực phẩm.
-● Từ những đánh giá của khách hàng, vấn đề được đưa ra là làm sao để các nhà hàng/ quán ăn hiểu được khách hàng rõ hơn, biết họ đánh giá về mình như thế nào để cải thiện hơn trong dịch vụ/sản phẩm.
+- Foody.vn là một kênh phối hợp với các nhà hàng/quán ăn bán thực phẩm online.
+- Chúng ta có thể lên đây để xem các đánh giá, nhận xét cũng như đặt mua thực phẩm.
+- Từ những đánh giá của khách hàng, vấn đề được đưa ra là làm sao để các nhà hàng/ quán ăn hiểu được khách hàng rõ hơn, biết họ đánh giá về mình như thế nào để cải thiện hơn trong dịch vụ/sản phẩm.
 
 ## Các kiến thức/ kỹ năng cần để giải quyết vấn đề này:
-● Hiểu vấn đề
-● Import các thư viện cần thiết và hiểu cách sử dụng
-● Đọc dữ liệu (dữ liệu project này được cung cấp)
-● Thực hiện EDA cơ bản (sử dụng Pandas Profiling Report)
-● Tiền xử lý dữ liệu: làm sạch, tạo tính năng mới, lựa chọn tính năng cần thiết...
-● Trực quan hóa dữ liệu
-● Lựa chọn thuật toán cho bài toán classification
-● Xây dựng model
-● Đánh giá model
-● Báo cáo kết quả
+- Hiểu vấn đề
+- Import các thư viện cần thiết và hiểu cách sử dụng
+- Đọc dữ liệu (dữ liệu project này được cung cấp)
+- Thực hiện EDA cơ bản (sử dụng Pandas Profiling Report)
+- Tiền xử lý dữ liệu: làm sạch, tạo tính năng mới, lựa chọn tính năng cần thiết...
+- Trực quan hóa dữ liệu
+- Lựa chọn thuật toán cho bài toán classification
+- Xây dựng model
+- Đánh giá model
+- Báo cáo kết quả
 
 Dữ liệu là những bình luận được thu thập từ Foody. Mỗi bình luận được gắn nhãn từ 1 đến 5 sao. Vì mục tiêu của dự án này là phân loại cảm xúc nên chúng tôi sẽ gắn nhãn lại các nhận xét thành 3 lớp theo quy tắc sau:
 - 1-2-3 sao: 'tiêu cực'
@@ -35,3 +35,22 @@ Có thể tập trung giải quyết bài toán
 - Gắn nhãn và chia nhóm theo nhóm đánh giá sau:
   - 1-2-3 sao: 'negative'
   -  4-5 sao: 'positive'
+ 
+## Bước 3: Data preparation/ Prepare
+Thực hiện các công việc:
+Vì đây là dữ liệu text Việt nên cần thực hiện công việc chuẩn hóa text là chính:
+- Kiểm tra, gắn lại nhãn cho các comment
+- Data Cleaning
+- Sử dụng Scattertext
+- Sử dụng WordCloud plot
+- Sử dụng Word2Vec Embeddings
+  
+## Bước 4&5: Modeling & Evaluation/ Analyze & Report
+Xây dựng các Classification model dự đoán loại ý kiến của khách hàng
+- Naïve Bayes
+- Logistic Regression
+....
+Thực hiện/ đánh giá kết quả các Classification model
+- R-squared
+- Acc, precision, recall, f1,...
+Kết luận
